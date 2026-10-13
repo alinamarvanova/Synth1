@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synth1</title>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- 1 этаж кнопок -->
+      <div class="first_floor_button">
+        <div class="btn_control">
+          <img src="img/icon_pause.svg" alt="pause" />
+        </div>
+        <div class="btn_control">
+          <img src="img/play.svg" alt="play" />
+        </div>
+        <!-- слайдер -->
+        <div class="header-slider">
+          <span class="header-slider__label">DESERT</span>
+
+          <input
+            type="range"
+            class="slider slider--header"
+            min="0"
+            max="100"
+            value="20"
+          />
+
+          <span class="header-slider__label">CARAVAN</span>
+        </div>
+      </div>
+      <!-- 2 этаж кнопок -->
+      <div class="second_floor_button">
+        <!-- 1 панель -->
+        <div class="panels">
+          <div class="panel">
+            <h1>DESERT</h1>
+            <!-- бейджи -->
+            <div class="preset-buttons">
+              <button class="preset-btn active" data-preset="awakening">
+                AWAKENING
+              </button>
+              <button class="preset-btn" data-preset="scorch">SCORCH</button>
+              <button class="preset-btn" data-preset="fury">FURY</button>
+              <button class="preset-btn" data-preset="silence">SILENCE</button>
+            </div>
+            <!-- слайдеры -->
+            <div class="sliders">
+              <!-- слайдер 1 -->
+              <div class="slider-group">
+                <label class="slider-label">FORCE</label>
+                <input
+                  type="range"
+                  class="slider"
+                  min="0"
+                  max="100"
+                  value="20"
+                />
+              </div>
+
+              <!-- Слайдер 2 -->
+              <div class="slider-group">
+                <label class="slider-label">MOVEMENT</label>
+                <input
+                  type="range"
+                  class="slider"
+                  min="0"
+                  max="100"
+                  value="20"
+                />
+              </div>
+
+              <!-- Слайдер 3 -->
+              <div class="slider-group">
+                <label class="slider-label">DUST</label>
+                <input
+                  type="range"
+                  class="slider"
+                  min="0"
+                  max="100"
+                  value="20"
+                />
+              </div>
+
+              <!-- Слайдер 4 -->
+              <div class="slider-group">
+                <label class="slider-label">HORIZON</label>
+                <input
+                  type="range"
+                  class="slider"
+                  min="0"
+                  max="100"
+                  value="20"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <h1>CARAVAN</h1>
+            <div class="preset-buttons">
+              <button class="preset-btn" data-preset="conversation">
+                CONVERSATION
+              </button>
+              <button class="preset-btn" data-preset="song">SONG</button>
+              <button class="preset-btn" data-preset="Whisper">WHISPER</button>
+              <button class="preset-btn" data-preset="chant">CHANT</button>
+            </div>
+            <!-- слайдеры -->
+            <div class="sliders">
+              <!-- слайдер 1 -->
+              <div class="slider-group">
+                <label class="slider-label">PRESERENCE</label>
+                <input
+                  type="range"
+                  class="slider"
+                  min="0"
+                  max="100"
+                  value="20"
+                />
+              </div>
+
+              <!-- Слайдер 2 -->
+              <div class="slider-group">
+                <label class="slider-label">DISTANCE</label>
+                <input
+                  type="range"
+                  class="slider"
+                  min="0"
+                  max="100"
+                  value="20"
+                />
+              </div>
+
+              <!-- Слайдер 3 -->
+              <div class="slider-group">
+                <label class="slider-label">ECHO</label>
+                <input
+                  type="range"
+                  class="slider"
+                  min="0"
+                  max="100"
+                  value="20"
+                />
+              </div>
+
+              <!-- Слайдер 4 -->
+              <div class="slider-group">
+                <label class="slider-label">SPIRIT</label>
+                <input
+                  type="range"
+                  class="slider"
+                  min="0"
+                  max="100"
+                  value="20"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="synth.js"></script>
+  </body>
+</html>
